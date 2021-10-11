@@ -1,0 +1,56 @@
+.login-form-container {
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form-content {
+  width: 350px;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.login-form ::placeholder {
+  color: #000;
+}
+
+label {
+  margin: 10px 0;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.login-form button {
+  margin-top: 30px;
+  width: 150px;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+}
+
+.login-form-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.login-form-bottom a {
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 720px) {
+  .login-form-content {
+    width: 100%;
+  }
+}

@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+
+@font-face {
+  font-family: TungstenSemibold;
+  src: url("/Assets/fonts/Tungsten-Book.ttf");
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 15px;
+  cursor: pointer;
+}
+
+/* ========== NAV-BAR ========== */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+
+header {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 10px 15px;
+  z-index: 1000;
+  transition: 0.5s;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-menu .nav-list {
+  list-style: none;
+}
+
+.nav-menu .nav-list a {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 800;
+  font-family: TungstenSemibold;
+}
+
+.btn-search {
+  background: url("/Assets/image/search.svg") no-repeat center;
+  background-size: 60%;
+}
+
+.btn-account {
+  background: url("/Assets/image/user.svg") no-repeat center;
+  background-size: 60%;
+}
+
+.btn-cart {
+  background: url("/Assets/image/cart.svg") no-repeat center;
+  background-size: 60%;
+}
+
+.logo {
+  background: url("/Assets/image/TITAN.svg") no-repeat center;
+  background-size: contain;
+  width: 55px;
+  height: 55px;
+}
+
+/* ========== Banner Here ========== */
+.hero-container {
+  padding-top: 60px;
+}
+
+.banner-content {
+  width: 100%;
+}
+
+.banner-content img {
+  width: 100%;
+}
+/* ========== Product Here ========== */
+.product-container,
+.essential-product-container,
+.store-schedule-container {
+  margin-top: 40px;
+}
+
+.product-new-arrivals {
+  padding: 20px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  padding: 10px;
+  gap: 30px;
+}
+
+.product-wrapper {
+  max-width: 330px;
+  cursor: pointer;
+}
+
+.product-wrapper img {
+  width: 100%;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: TungstenSemibold;
+}
+
+.product-info {
+  padding: 10px;
+}
+
+.product-info span {
+  color: #ccc;
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.product-info p {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-info span:nth-child(3) {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #000;
+}
+
+.essential-products {
+  padding: 10px;
+}
+
+.banner-mobile {
+  display: none;
+}
+
+/* ========== Essential Here ========== */
+
+.essential-product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-content: center;
+  gap: 30px;
+  margin-top: 15px;
+}
+
+.essential-product-wrapper {
+  cursor: pointer;
+}
+
+.essential-product-wrapper img {
+  width: 100%;
+}
+
+.essential-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.essential-title span {
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.essential-title .btn-shop-now {
+  padding: 10px;
+  max-width: 150px;
+  background: none;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.essential-title .btn-shop-now:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* ========== Schedule Here ========== */
+.store-schedule {
+  padding: 10px;
+}
+.schedule-store-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-content: center;
+  margin-top: 20px;
+  gap: 20px;
+  position: relative;
+}
+
+.schedule-store {
+  position: relative;
+}
+
+.schedule-store img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.schedule-store span {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #fff;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: 400;
+  opacity: 0;
+}
+
+.schedule-store:hover span {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* ========== Footer Here ========== */
+.footer-container {
+  margin-top: 40px;
+  background: #000;
+  padding: 20px;
+}
+
+.footer-nav-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 10px;
+}
+
+.footer-link-list {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-menu .footer-menu-list li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-menu .footer-menu-list li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: TungstenSemibold;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.footer-menu .footer-menu-list li a:hover {
+  text-decoration: underline;
+  opacity: 0.6;
+}
+
+.footer-subscription {
+  color: #fff;
+  float: right;
+  font-size: 1.2rem;
+  padding: 0 12px;
+  width: 350px;
+}
+
+.footer-subscription span {
+  font-family: TungstenSemibold;
+  font-size: 1.1rem;
+}
+
+.subscription-input {
+  margin-top: 10px;
+  position: relative;
+}
+
+.subscription-input input[type="email"] {
+  padding: 12px;
+  width: 320px;
+  outline: 1px solid #fff;
+  border: none;
+  background: #000;
+  color: #fff;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+.subscription-input button {
+  position: absolute;
+  padding: 12px;
+  left: 245px;
+  top: -1px;
+  background: #000;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.subscription-input button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.social-icon {
+  margin-top: 20px;
+  float: right;
+}
+
+.social-icon i {
+  font-size: 1.3rem;
+  margin-right: 20px;
+}
+
+.social-icon i:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 10px;
+}
+
+.footer-reserve span {
+  font-size: 0.8rem;
+}
+
+/* ========== Media Query ==========*/
+@media screen and (max-width: 980px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .btn-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-btn {
+    display: block;
+    background: url("/Assets/image/menu.svg") no-repeat center;
+    background-size: contain;
+    width: 35px;
+    height: 25px;
+    cursor: pointer;
+  }
+
+  .banner-desktop {
+    display: none;
+  }
+
+  .banner-mobile {
+    display: block;
+  }
+
+  /* ========== Product ==========*/
+  .product-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .product-new-arrivals {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+  }
+
+  header {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 10px 5px;
+    z-index: 1000;
+    transition: 0.5s;
+  }
+
+  .essential-product-list {
+    grid-template-columns: 1fr;
+  }
+
+  .essential-product-wrapper img {
+    height: 350px;
+    object-fit: cover;
+  }
+
+  .schedule-store-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-container,
+  .footer-subscription {
+    padding: 0;
+  }
+
+  .footer-subscription {
+    width: 100%;
+  }
+
+  .subscription-input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .subscription-input button {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    left: 0;
+  }
+
+  .subscription-input input[type="email"] {
+    width: 100%;
+  }
+
+  .footer-menu .footer-menu-list li a {
+    font-size: 1.3rem;
+  }
+
+  .footer-link-list {
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .footer-nav-list {
+    flex-direction: column;
+  }
+
+  .social-icon {
+    float: left;
+  }
+
+  .footer-reserve span {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .bd-container {
+    margin: 0 1rem;
+  }
+}
