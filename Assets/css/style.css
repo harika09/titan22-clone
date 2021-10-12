@@ -6,6 +6,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Montserrat", sans-serif;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .bd-container {
@@ -33,6 +34,7 @@ button {
   outline: none;
   padding: 15px;
   cursor: pointer;
+  color: #000;
 }
 
 /* ========== NAV-BAR ========== */
