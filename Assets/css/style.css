@@ -177,7 +177,9 @@ header {
 }
 
 .swiper-pagination {
-  margin: auto;
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
   width: 100%;
 }
 
@@ -522,6 +524,10 @@ h2 {
     background-size: 70%;
   }
 
+  .swiper-pagination {
+    position: relative !important;
+  }
+
   .essential-product-list {
     grid-template-columns: 1fr;
   }
@@ -550,16 +556,16 @@ h2 {
   }
 
   .subscription-input button {
+    display: block;
     position: relative;
     margin-top: 10px;
     width: 100%;
     left: 0;
   }
 
-  .subscription-input input[type="email"] {
+  .subscription-input #sub-email {
     width: 100%;
   }
-
   .footer-menu .footer-menu-list li a {
     font-size: 1.3rem;
   }
