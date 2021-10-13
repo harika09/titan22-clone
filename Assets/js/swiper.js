@@ -27,5 +27,3 @@ var mySwiper = new Swiper(".swiper-containers", {
     },
   },
 });
-
-mySwiper.init();

@@ -91,19 +91,22 @@ header {
   text-decoration: underline;
 }
 
+.btn-search,
+.btn-cart,
+.btn-account {
+  background-size: 70%;
+}
+
 .btn-search {
   background: url("/Assets/image/search.svg") no-repeat center;
-  background-size: 100%;
 }
 
 .btn-account {
   background: url("/Assets/image/user.svg") no-repeat center;
-  background-size: 100%;
 }
 
 .btn-cart {
   background: url("/Assets/image/cart.svg") no-repeat center;
-  background-size: 100%;
 }
 
 .logo {
