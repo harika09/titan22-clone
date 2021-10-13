@@ -49,6 +49,14 @@ input[type="password"] {
   font-size: 0.8rem;
 }
 
+.login-error {
+  display: none;
+  margin-top: 10px;
+  text-align: center;
+  padding: 25px;
+  background-color: #ffcccc;
+  color: #ff0000;
+}
 @media screen and (max-width: 720px) {
   .login-form-content {
     width: 100%;

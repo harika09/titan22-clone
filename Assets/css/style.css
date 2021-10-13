@@ -12,7 +12,13 @@
 .bd-container {
   margin-left: 1rem;
   margin-right: 1rem;
-  max-width: 1340px;
+  max-width: 1440px;
+}
+
+.bd-banner-container {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  max-width: 1940px;
 }
 
 @font-face {
@@ -68,11 +74,18 @@ header {
   list-style: none;
 }
 
-.nav-menu .nav-list a {
+.nav-menu .nav-list a,
+.shop-menu div .shop-nav-list a,
+.brands-menu .brands-nav-list a {
   text-transform: uppercase;
   font-size: 1.3rem;
   font-weight: 800;
   font-family: TungstenSemibold;
+  letter-spacing: 1px;
+}
+
+.nav-menu .nav-list a:hover {
+  text-decoration: underline;
 }
 
 .btn-search {
@@ -95,6 +108,47 @@ header {
   background-size: contain;
   width: 55px;
   height: 55px;
+}
+
+.nav-menu .shop:hover .shop-drop-down,
+.nav-menu .brands:hover .brands-drop-down {
+  visibility: visible;
+  display: inline-block;
+}
+
+.shop-drop-down,
+.brands-drop-down {
+  visibility: hidden;
+  display: block;
+  position: absolute;
+  top: 52px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: -1;
+  transition: all 0.5s ease-in-out;
+  transform-origin: left top;
+  transform: scaleY(1);
+}
+
+.shop-menu,
+.brands-menu {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 25px;
+}
+
+.shop-menu div .shop-nav-list,
+.brands-menu div .brands-nav-list {
+  margin-bottom: 10px;
+}
+
+.shop-menu div .shop-nav-list a:hover,
+.brands-menu div .brands-nav-list a:hover {
+  text-decoration: underline;
+  opacity: 0.6;
 }
 
 /* ========== Banner Here ========== */
@@ -320,7 +374,7 @@ h2 {
   position: relative;
 }
 
-.subscription-input input[type="email"] {
+.subscription-input #sub-email {
   padding: 12px;
   width: 320px;
   outline: 1px solid #fff;
@@ -373,6 +427,12 @@ h2 {
 
 .footer-reserve span {
   font-size: 0.8rem;
+}
+
+.sub-error {
+  display: none;
+  padding: 5px;
+  color: #ff0000;
 }
 
 /* ========== Media Query ==========*/
@@ -496,6 +556,10 @@ h2 {
 
 @media screen and (min-width: 1340px) {
   .bd-container {
+    margin: 0 auto;
+  }
+
+  .bd-banner-container {
     margin: 0 auto;
   }
 }
