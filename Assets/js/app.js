@@ -14,7 +14,6 @@ function loginForm() {
 }
 
 /* Subscription */
-
 function subscription() {
   const subError = document.querySelector(".sub-error");
   const emailSub = document.getElementById("sub-email").value;

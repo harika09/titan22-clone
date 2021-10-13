@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
 </head>
 <body>
     <!---------- Header ---------->
@@ -119,9 +124,6 @@
                 </div>
                </div>
             </ul>
-
-           
-
                 <div class="btn-action">
                     <button class="btn-search"></button>
                     <button class="btn-cart"></button>
@@ -143,9 +145,24 @@
         <section class="hero-container">
             <div class="hero-content bd-banner-container">
                 <div class="banner-content">
-                    <img src="/Assets/image/banner.jpg" alt="banner-sale" class="banner-desktop">
-                    <img src="/Assets/image/banner-mobile.jpg" alt="banner-mobile" class="banner-mobile">
+                    <div class="swiper swiper-containers desktop">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide banner-desktop"> <img src="/Assets/image/banner.jpg" alt="banner-sale"></div>
+                            <div class="swiper-slide banner-desktop"> <img src="/Assets/image/AJ12_Royalty_1920x.jpg" alt="banner-sale" ></div>
+                        </div>
+                    </div>
+
+                    <div class="swiper swiper-containers mobile">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide banner-mobile">  <img src="/Assets/image/banner-mobile.jpg" alt="banner-mobile" ></div>
+                            <div class="swiper-slide banner-mobile"> <img src="/Assets/image/banner-mobile2.jpg" alt="banner-sale" ></div>
+                    </div>
+
+                
+                    
+                   
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
 
@@ -365,7 +382,12 @@
 
     </footer>
 
+    <!-- JS -->
     <script src="/Assets/js/app.js"></script>
+    <script src="/Assets/js/swiper.js"></script>
+
+    
+ 
     
 </body>
 </html>
