@@ -1,5 +1,15 @@
 const error = document.querySelector(".login-error");
 
+/* Toggle Menu */
+function toggleMenu() {
+  const menu = document.querySelector(".menu-btn");
+  const navMenu = document.querySelector(".nav-menu");
+
+  menu.classList.toggle("active");
+  navMenu.classList.toggle("active");
+  document.querySelector(".nav-menu.active").style.width = "100%";
+}
+
 /* Login Form */
 function loginForm() {
   let email = document.getElementById("email").value;
@@ -33,15 +43,18 @@ function subscription() {
 /* Show Search */
 function showSearch() {
   const searchBar = document.querySelector(".search");
+  const cart = document.querySelector(".cart-content");
   if (searchBar.style.display === "block") {
     searchBar.style.display = "none";
   } else {
     searchBar.style.display = "block";
+    cart.style.display = "none";
   }
 }
 
 function closeSearch() {
   const searchBar = document.querySelector(".search");
+
   if (searchBar.style.display === "block") {
     searchBar.style.display = "none";
   }
@@ -49,11 +62,13 @@ function closeSearch() {
 
 /* Show Cart */
 function showCart() {
+  const searchBar = document.querySelector(".search");
   const cart = document.querySelector(".cart-content");
 
   if (cart.style.display === "block") {
     cart.style.display = "none";
   } else {
     cart.style.display = "block";
+    searchBar.style.display = "none";
   }
 }
