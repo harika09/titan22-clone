@@ -18,24 +18,131 @@
         <a href="/" class="logo"><img src="assets/img/fav-icon.png" alt="" srcset=""></a>
         
         <ul class="nav-menu">
-            <li class="nav-list"><a href="">Shop All</a></li>
-            <li class="nav-list"><a href="">Footwear</a></li>
-            <li class="nav-list"><a href="">Apparel</a></li>
-            <li class="nav-list"><a href="">Accessories</a></li>
-            <li class="nav-list"><a href="">Brands</a></li>
-        </ul>
+            <div class="shop">
+                <li class="nav-list "><a href="#/">Shop All</a></li>
 
-            <div class="btn-action">
-                <button class="btn-search"></button>
-                <button class="btn-cart"></button>
-                <a href="/Pages/Account.html"><button class="btn-account"></button></a>
-            <div class="menu-btn">
-            
+                <div class="shop-drop-down">
+                    <div class="shop-menu">
+                        <div>
+                           <ul class="shop-sub-menu">
+                                <li class="shop-nav-list"><a href="#/">Shop All</a></li>
+                                <li class="shop-nav-list"><a href="#/">Men</a></li>
+                                <li class="shop-nav-list"><a href="#/">Women</a></li>
+                                <li class="shop-nav-list"><a href="#/">Youth</a></li>
+                                <li class="shop-nav-list"><a href="#/">Sale</a></li>
+                                <li class="shop-nav-list"><a href="#/">Sustainable Materials</a></li>
+                           </ul>
+                       </div>
+                       <div>
+                           <ul class="shop-sub-menu"></ul>
+                            <li class="shop-nav-list"><a href="#/">Footwear</a></li>
+                            <li class="shop-nav-list"><a href="#/">Perfomance</a></li>
+                            <li class="shop-nav-list"><a href="#/">Lifestyle</a></li>
+                            <li class="shop-nav-list"><a href="#/">Slides & Sandals</a></li>
+                         </div>
+
+                        <div>
+                            <ul class="shop-sub-menu">
+                                <li class="shop-nav-list"><a href="#/">Apparel</a></li>
+                                <li class="shop-nav-list"><a href="#/">Tops & t-shirt</a></li>
+                                <li class="shop-nav-list"><a href="#/">Jersey & Tanks</a></li>
+                                <li class="shop-nav-list"><a href="#/">Jacket & Hoodies</a></li>
+                                <li class="shop-nav-list"><a href="#/">Shorts</a></li>
+                                <li class="shop-nav-list"><a href="#/">Pants</a></li>
+                            </ul>
+                          
+                         </div>
+
+                        <div>
+                            <ul class="shop-sub-menu">
+                                <li class="shop-nav-list"><a href="#/">Accessories</a></li>
+                                <li class="shop-nav-list"><a href="#/">Headwear</a></li>
+                                <li class="shop-nav-list"><a href="#/">Bags</a></li>
+                                <li class="shop-nav-list"><a href="#/">Socks</a></li>
+                                <li class="shop-nav-list"><a href="#/">Magazines</a></li>
+                                <li class="shop-nav-list"><a href="#/">Shoe Cleaners</a></li>
+                                <li class="shop-nav-list"><a href="#/">Men's Grooming</a></li>
+                            </ul>
+                          
+                        </div>
+                    </div>
+                </div>
             </div>
+            <li class="nav-list"><a href="#/">Footwear</a></li>
+            <li class="nav-list"><a href="#/">Apparel</a></li>
+            <li class="nav-list"><a href="#/">Accessories</a></li>
+            
+           <div class="brands">
+                <li class="nav-list"><a href="#/">Brands</a></li>
+
+            <div class="brands-drop-down">
+                <div class="brands-menu">
+                    <div>
+                        <ul class="brands-sub-menu">
+                            <li class="brands-nav-list"><a href="#/">Adidas</a></li>
+                            <li class="brands-nav-list"><a href="#/">Baxter of California</a></li>
+                            <li class="brands-nav-list"><a href="#/">Bball Junkies</a></li>
+                            <li class="brands-nav-list"><a href="#/">BrandBlack</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <ul class="brands-sub-menu">
+                            <li class="brands-nav-list"><a href="#/">Converse</a></li>
+                            <li class="brands-nav-list"><a href="#/">Json Markk</a></li>
+                            <li class="brands-nav-list"><a href="#/">Jordan</a></li>
+                            <li class="brands-nav-list"><a href="#/">Mitchell & Ness</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <ul class="brands-sub-menu">
+                            <li class="brands-nav-list"><a href="#/">New Balance</a></li>
+                            <li class="brands-nav-list"><a href="#/">New Era</a></li>
+                            <li class="brands-nav-list"><a href="#/">Nike</a></li>
+                            <li class="brands-nav-list"><a href="#/">Nike NBA</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <ul class="brands-sub-menu">
+                            <li class="brands-nav-list"><a href="#/">Nike Sportswear</a></li>
+                            <li class="brands-nav-list"><a href="#/">Pigalle</a></li>
+                            <li class="brands-nav-list"><a href="#/">Slam</a></li>
+                            <li class="brands-nav-list"><a href="#/">Titan</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </ul>
+            <div class="btn-action">
+                <button class="btn-search" onclick="showSearch()"></button>
+                <button class="btn-cart" onclick="showCart()"></button>
+                <a href="/Pages/Account.html"><button class="btn-account"></button></a>
+            <div class="menu-btn">  
+            </div>
+            </div>  
+         
+        </div>
+        <div class="cart-content bd-container">
+            <div class="cart">
+                <div class="cart-container ">
+                    <span>Your bag is currently empty.</span>
+                    <button>Continue Shopping</button>
+                </div>
             </div>
         </div>
-    
+     
+        <div class="search">
+            <div class="search-container bd-container">
+                 <button class="search-btn"></button>
+                 <input type="text" id="search" placeholder="Search">
+                 <button class="close-search" onclick="closeSearch()">x</button>
+            </div>
+         </div>
 </header>
+
 
      <!---------- Main ---------->
      <main>

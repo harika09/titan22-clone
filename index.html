@@ -125,17 +125,30 @@
                </div>
             </ul>
                 <div class="btn-action">
-                    <button class="btn-search"></button>
-                    <button class="btn-cart"></button>
+                    <button class="btn-search" onclick="showSearch()"></button>
+                    <button class="btn-cart" onclick="showCart()"></button>
                     <a href="/Pages/Account.html"><button class="btn-account"></button></a>
-                <div class="menu-btn">
-                
+                <div class="menu-btn">  
                 </div>
+                </div>  
+             
+            </div>
+            <div class="cart-content bd-container">
+                <div class="cart">
+                    <div class="cart-container ">
+                        <span>Your bag is currently empty.</span>
+                        <button>Continue Shopping</button>
+                    </div>
                 </div>
             </div>
-
-          
-        
+         
+            <div class="search">
+                <div class="search-container bd-container">
+                     <button class="search-btn"></button>
+                     <input type="text" id="search" placeholder="Search">
+                     <button class="close-search" onclick="closeSearch()">x</button>
+                </div>
+             </div>
     </header>
    
  

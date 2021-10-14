@@ -29,3 +29,31 @@ function subscription() {
     document.querySelector(".sub-btn").style.border = "1px solid #fff";
   }
 }
+
+/* Show Search */
+function showSearch() {
+  const searchBar = document.querySelector(".search");
+  if (searchBar.style.display === "block") {
+    searchBar.style.display = "none";
+  } else {
+    searchBar.style.display = "block";
+  }
+}
+
+function closeSearch() {
+  const searchBar = document.querySelector(".search");
+  if (searchBar.style.display === "block") {
+    searchBar.style.display = "none";
+  }
+}
+
+/* Show Cart */
+function showCart() {
+  const cart = document.querySelector(".cart-content");
+
+  if (cart.style.display === "block") {
+    cart.style.display = "none";
+  } else {
+    cart.style.display = "block";
+  }
+}

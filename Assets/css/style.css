@@ -55,6 +55,10 @@ button {
   padding: 0 25px;
 }
 
+.header-container {
+  position: relative;
+}
+
 header {
   background-color: #fff;
   position: fixed;
@@ -62,7 +66,7 @@ header {
   left: 0;
   top: 0;
   padding: 10px 15px;
-  z-index: 1000;
+  z-index: 10;
   transition: 0.5s;
 }
 
@@ -132,10 +136,10 @@ header {
   right: 0;
   width: 100%;
   background-color: #fff;
-  z-index: -1;
-  transition: all 0.5s ease-in-out;
-  transform-origin: left top;
-  transform: scaleY(1);
+  z-index: 61;
+  transform: translateY(0);
+  transition: all 0.3s ease-out;
+  box-shadow: 0 5px 5px rgb(0 0 0 / 5%);
 }
 
 .shop-menu,
@@ -155,12 +159,93 @@ header {
 .brands-menu div .brands-nav-list a:hover {
   text-decoration: underline;
   opacity: 0.6;
+  transform: translateY(100%);
+}
+
+.cart-content {
+  display: none;
+  position: relative;
+}
+
+.cart-container {
+  top: 10px;
+  right: 10px;
+  width: 300px;
+  font-size: 0.8rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  background-color: #fff;
+  padding: 15px 25px;
+  transform: translateY(0);
+  transition: all 0.3s ease-out;
+  box-shadow: 0 5px 5px rgb(0 0 0 / 8%);
+}
+
+.cart-container button {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.cart-container button:hover {
+  background-color: black;
+  color: #fff;
+}
+
+.search {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  z-index: -1;
+  transform: translateY(0);
+  transition: all 0.3s ease-out;
+  box-shadow: 0 5px 5px rgb(0 0 0 / 5%);
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 25px;
+}
+
+.search input {
+  padding: 10px;
+  width: 80%;
+  border: none;
+  outline: none;
+}
+
+.search ::placeholder {
+  color: #000;
+}
+
+.search button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.search .search-btn {
+  background: url("/Assets/image/search.svg") no-repeat center;
+  margin-right: 10px;
+}
+
+.search button {
+  font-size: 1.5rem;
 }
 
 /* ========== Banner Here ========== */
-.hero-container {
-  padding-top: 60px;
-}
 
 .banner-content {
   width: 100%;
@@ -185,6 +270,10 @@ header {
 
 .swiper-pagination-bullet {
   margin: 10px 5px;
+}
+
+.swiper-pagination-bullet-active {
+  --swiper-theme-color: #000;
 }
 
 /* ========== Product Here ========== */
@@ -522,6 +611,10 @@ h2 {
   .btn-cart,
   .btn-account {
     background-size: 70%;
+  }
+
+  .search {
+    padding: 0;
   }
 
   .swiper-pagination {
