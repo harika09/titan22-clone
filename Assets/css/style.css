@@ -95,6 +95,13 @@ header {
   text-decoration: underline;
 }
 
+.btn-action {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .btn-search,
 .btn-cart,
 .btn-account {
@@ -557,12 +564,6 @@ h2 {
     display: none;
   }
 
-  .btn-action {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .nav-menu.active {
     display: flex;
     flex-direction: column;
@@ -579,7 +580,7 @@ h2 {
     padding-left: 0;
     background-color: #fff;
     color: #fff;
-    padding: 50px;
+    padding: 25px;
   }
 
   .menu-btn {
