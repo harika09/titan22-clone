@@ -540,6 +540,10 @@ h2 {
   cursor: pointer;
 }
 
+.footer-logo img {
+  max-width: 45px;
+}
+
 .footer-bottom {
   display: flex;
   justify-content: space-between;
