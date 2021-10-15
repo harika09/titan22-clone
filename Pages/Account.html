@@ -6,14 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title>Account-TITAN</title>
 
+    
+    <link rel="icon" href="/Assets/image/icon.png">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="/Assets/css/style.css">
     <link rel="stylesheet" href="/Assets/css/account.css">
+
+    
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
 
 </head>
 <body>
 
-    <!---------- Header ---------->
-    <header class="header-container">
+     <!---------- Header ---------->
+     <header class="header-container">
         <div class="header bd-container" id="header">
         <a href="/" class="logo"><img src="assets/img/fav-icon.png" alt="" srcset=""></a>
         
@@ -115,13 +125,19 @@
                 </div>
             </div>
            </div>
+
+           <hr>
+           <ul class="mobile-auth">
+               <li class="nav-list"><a href="/Pages/Account.html">Login</a></li>
+               <li class="nav-list"><a href="#/">Register</a></li>
+           </ul>
         </ul>
             <div class="btn-action">
                 <button class="btn-search" onclick="showSearch()"></button>
                 <button class="btn-cart" onclick="showCart()"></button>
                 <a href="/Pages/Account.html"><button class="btn-account"></button></a>
-            <div class="menu-btn">  
-            </div>
+                <div class="menu-btn" onclick="toggleMenu()">  
+                </div>
             </div>  
          
         </div>
@@ -226,10 +242,11 @@
 
     </footer>
 
-    <script src="/Assets/js/app.js"></script>
 
-    
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+    <!-- JS -->
+    <script src="../Assets/js/app.js"></script>
+    <script src="/Assets/js/swiper.js"></script>
+
 </body>
 </html>
