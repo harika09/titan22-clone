@@ -85,7 +85,8 @@ header {
 .shop-menu div .shop-nav-list a,
 .brands-menu .brands-nav-list a {
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 22px;
+  line-height: 24px;
   font-weight: 800;
   font-family: TungstenSemibold;
   letter-spacing: 1px;
@@ -470,7 +471,7 @@ h2 {
   color: #fff;
   text-transform: uppercase;
   font-family: TungstenSemibold;
-  font-size: 1rem;
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -634,6 +635,10 @@ h2 {
 
   .product-new-arrivals {
     padding: 5px;
+  }
+
+  .footer-menu .footer-menu-list li a {
+    font-size: 14px;
   }
 }
 
