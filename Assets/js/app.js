@@ -7,7 +7,6 @@ function toggleMenu() {
 
   menu.classList.toggle("active");
   navMenu.classList.toggle("active");
-  document.querySelector(".nav-menu.active").style.width = "100%";
 }
 
 /* Login Form */
@@ -72,3 +71,44 @@ function showCart() {
     searchBar.style.display = "none";
   }
 }
+
+$(".show-more a").on("click", function () {
+  var $this = $(this);
+  var $content = $this.parent().prev("div.product-details");
+  var linkText = $this.text().toUpperCase();
+
+  if (linkText === "READ MORE") {
+    linkText = "read less";
+    $content.switchClass("hideContent", "showContent");
+  } else {
+    linkText = "read more";
+    $content.switchClass("showContent", "hideContent");
+  }
+
+  $this.text(linkText);
+});
+
+/* Show More */
+// function showMore() {
+//   const showMore = document.querySelector(".show-more-details");
+//   const more = document.querySelector(".hideContent");
+
+//   showMore.classList.toggle("active");
+//   more.classList.toggle("active");
+// }
+
+const sizes = document.getElementsByClassName("size");
+
+for (var i = 0; i < sizes.length; i++) {
+  sizes[i].addEventListener("click", function () {
+    const current = document.getElementsByClassName(" active-size");
+
+    current[0].className = current[0].className.replace(" active-size", "");
+
+    this.className += " active-size";
+  });
+}
+
+$(".product-desc").click(function () {
+  $(".product-desc-text").slideToggle("fast");
+});
