@@ -3,22 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>Account-TITAN</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITAN PRODUCT</title>
+    
     <!-- Icon -->
     <link rel="icon" href="/Assets/image/icon.png">
     
     <!-- CSS -->
     <link rel="stylesheet" href="/Assets/css/style.css">
     <link rel="stylesheet" href="/Assets/css/account.css">
+    <link rel="stylesheet" href="/Assets/css/product.css">
 
     
-     <!-- Link Swiper's CSS -->
-     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
-
 </head>
 <body>
 
@@ -157,36 +153,55 @@
                  <button class="close-search" onclick="closeSearch()">x</button>
             </div>
          </div>
-</header>
+    </header>
 
+    <!---------- Main ---------->
+    <main>
+        <section class="product-container">
+            <div class="product-content bd-container">
+                <div class="product-title">
+                    <span>HOME PRODUCTS NIKE LEBRON 8 V/2 LOW 'TREASURE BLUE'</span>
+                </div>
 
+                <div class="product">
+                    <div class="product-images">
+                        <img src="/Assets/image/Products/j12.png" alt="AJ12_Royalty_1920x">
+                    </div>
 
-     <!---------- Main ---------->
-     <main>
-         <section class="login-form-container">
-             <div class="login-form-content bd-container">
+                    <div class="product-wrapper-info">
+                        <div class="product-info-top">
+                            <span class="product-brand">Nike</span>
+                            <h3>Nike LeBron 8 V/2 Low 'Treasure Blue'</h3>
+                            <span class="product-color">
+                                TREASURE BLUE/WHITE-BLACK
+                            </span>
+                            <span class="product-SKU">DN1581-400</span>
+                            <p class="product-price">₱9,295.00</p>
+                        </div>
 
-                <h2>Login</h2>
+                        <div class="product-info-mid">
+                            <strong>POP NO MATTER WHERE YOU ARE.</strong>
+                            <p>The LeBron 8 has always been a statement shoe—and while the silhouette is now meant to make a statement off the court, let's not forget that its full-length Max Air bag and full-length Phylon midsole gave The King a brand-new ride in 2011. The LeBron 8 V/2 Low brings back everything you love about the original LeBron 8, and this time arrives in a make-up featuring Treasure Blue and vibrant Volt Green to remind us that LeBron has brought it on both coasts.</p>    
+                        </div>
 
-                <div class="login-error"><span>Incorret email or password.</span></div>
+                        
+                        <div class="product-size-container">
+                            <div class="product-select">
+                                <span>Choose a size:</span>
+                                <a href="#/">View size chart</a>
+                            </div>
+                        </div>
 
-                 <div class="login-form" id="login-form">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Enter Email">
-                    <label for="password">Password</label>
-                    <input type="password"  id="password" placeholder="Enter Email">
+                        <div class="product-add-cart-btn">
+                            <input type="submit" value="Add to cart"></input>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-                    <button onclick="loginForm()">Sign In</button>
-                 </div>
-                 <div class="login-form-bottom">
-                     <a href="../Pages/Register.html">Register</a>
-                     <a href="#/">Forgot your password</a>
-                 </div>
-             </div>
-         </section>
-     </main>
-
-   <!---------- Footer ---------->
+      <!---------- Footer ---------->
    <footer class="footer-container">
     <div class="footer-content bd-container">
    
@@ -252,6 +267,6 @@
     <!-- JS -->
     <script src="../Assets/js/app.js"></script>
     <script src="/Assets/js/swiper.js"></script>
-
+    
 </body>
 </html>

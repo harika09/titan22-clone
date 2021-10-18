@@ -229,7 +229,7 @@ hr {
   padding: 0 25px;
 }
 
-.search input {
+#search {
   padding: 10px;
   width: 80%;
   border: none;
@@ -498,7 +498,7 @@ h2 {
   position: relative;
 }
 
-.subscription-input #sub-email {
+#sub-email {
   padding: 12px;
   width: 320px;
   outline: 1px solid #fff;
@@ -710,7 +710,7 @@ h2 {
     left: 0;
   }
 
-  .subscription-input #sub-email {
+  #sub-email {
     width: 100%;
   }
   .footer-menu .footer-menu-list li a {

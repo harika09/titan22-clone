@@ -78,6 +78,10 @@ input[type="password"] {
   color: #ff0000;
 }
 
+.subscription-input ::placeholder {
+  color: #fff;
+}
+
 /* Register Here */
 .register-checbox {
   margin-top: 20px;
