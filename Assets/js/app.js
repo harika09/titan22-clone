@@ -98,17 +98,42 @@ $(".show-more a").on("click", function () {
 // }
 
 const sizes = document.getElementsByClassName("size");
+const soldout = document.getElementsByClassName("soldout");
+
+for (var i = 0; i < soldout.length; i++) {
+  soldout[i].addEventListener("click", function () {
+    const btnCart = document.getElementById("btnCart");
+
+    btnCart.classList.add("none");
+    btnCart.value = "Sold Out";
+  });
+}
 
 for (var i = 0; i < sizes.length; i++) {
   sizes[i].addEventListener("click", function () {
     const current = document.getElementsByClassName(" active-size");
+    const btnCart = document.getElementById("btnCart");
 
     current[0].className = current[0].className.replace(" active-size", "");
 
     this.className += " active-size";
+    btnCart.classList.remove("none");
+    btnCart.value = "Add to Cart";
   });
 }
 
 $(".product-desc").click(function () {
   $(".product-desc-text").slideToggle("fast");
 });
+
+/* Image Slider */
+
+const smallImage = document.getElementsByClassName("small-img");
+
+for (var i = 0; i < smallImage.length; i++) {
+  smallImage[i].addEventListener("click", function () {
+    const primaryImage = document.getElementById("primaryImage");
+    // primaryImage.src = smallImage[i].src;
+    primaryImage.src = this.getAttribute("src");
+  });
+}
