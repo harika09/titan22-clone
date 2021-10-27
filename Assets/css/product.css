@@ -64,7 +64,7 @@
 
 .product-info-mid strong {
   display: block;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   margin-bottom: 10px;
 }
 
@@ -146,6 +146,7 @@
   cursor: pointer;
   border: 1px solid #ccc;
   margin-top: 10px;
+  -webkit-appearance: none;
 }
 
 .product-add-cart-btn input[type="submit"].none {
