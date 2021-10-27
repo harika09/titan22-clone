@@ -147,6 +147,7 @@
   border: 1px solid #ccc;
   margin-top: 10px;
   -webkit-appearance: none;
+  -webkit-border-radius: 0px;
 }
 
 .product-add-cart-btn input[type="submit"].none {
