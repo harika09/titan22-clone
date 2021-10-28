@@ -1,5 +1,5 @@
 :root {
-  --swiper-navigation-size: 22 !important;
+  --swiper-navigation-size: 22px !important;
 }
 .product-container {
   display: flex;
@@ -235,6 +235,11 @@
 .swiper-button-prev {
   color: #000 !important;
   height: 22px !important;
+}
+
+.swiper-button-next:active,
+.swiper-button-prev:active {
+  outline: none !important;
 }
 
 @media screen and (max-width: 720px) {
