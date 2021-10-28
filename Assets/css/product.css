@@ -1,3 +1,6 @@
+:root {
+  --swiper-navigation-size: 22 !important;
+}
 .product-container {
   display: flex;
   justify-content: center;
@@ -226,6 +229,12 @@
 .related-product-info h4 {
   margin-bottom: 10px;
   font-size: 1rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000 !important;
+  height: 22px !important;
 }
 
 @media screen and (max-width: 720px) {
